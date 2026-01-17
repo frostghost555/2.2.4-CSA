@@ -1,6 +1,6 @@
 /*
  * Activity 2.2.2
- * 
+ *
  * A Player class the PhraseSolverGame
  */
 import java.util.Scanner;
@@ -10,46 +10,41 @@ public class Player
   /* your code here - attributes */
   private String name;
   private int points;
-  /* your code here - constructor(s) 
+
+  /* your code here - constructor(s)
   prompt the user to input the player’s name;
-  
   save the player's name to the instance variable;
-
   set their points to 0; and
-
-  print a message welcoming the player, by name, to the game.*/ 
+  print a message welcoming the player, by name, to the game.*/
   public Player(){
-  
-  Scanner sc = new Scanner(System.in);
-
-  System.out.println("Enter Your Name");
-  name = sc.nextLine();
-  points = 0;
-  System.out.print("Welcome "+ name);
-
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter Your Name");
+    name = sc.nextLine();
+    points = 0;
+    System.out.print("Welcome "+ name);
   }
 
   public Player(String inputName){
-  
-  name = inputName;
-  points = 0;
-  System.out.print("Welcome "+ name);
-
+    name = inputName;
+    points = 0;
+    System.out.print("Welcome "+ name);
   }
-  /* your code here - accessor(s) */ 
-    public String getName() {
-      return name;
-    }
 
-    public int getPoints(){
-      return points;
-    }
-  /* your code here - mutator(s) */ 
-    public void setPoints(int p){
-      points = p;
-    }
+  /* your code here - accessor(s) */
+  public String getName() {
+    return name;
+  }
 
-    public void setName(String n){
-      name = n;
-    }
+  public int getPoints(){
+    return points;
+  }
+
+  /* your code here - mutator(s) */
+  public void setPoints(int p){
+    points = p;
+  }
+
+  public void setName(String n){
+    name = n;
+  }
 }
