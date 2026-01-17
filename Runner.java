@@ -5,14 +5,12 @@
  */
 public class Runner
 {
-  public static void main(String[] args) 
+  public static void main(String[] args)
   {
-
     //Player p = new Player("MrBaez");
     //What is the object's state after the line above?
 
-    PhraseSolver p = new PhraseSolver(); 
+    PhraseSolver p = new PhraseSolver();
     p.play();
   }
-
-} 
+}
